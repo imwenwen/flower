@@ -1,0 +1,3742 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org" />
+	<head>
+		<meta charset="utf-8" />
+		<title>仿米商城</title>
+		<base th:href="@{/}">
+		<link href="static/css/style.css" rel="stylesheet">
+		<script src="/templates/jss/index.js" charset="utf-8"></script>
+	</head>
+	<body>
+		<!-- 头部 -->
+		<header id="header">
+			<!-- 顶部导航栏start -->
+			<div class="site-topbar">
+				<div class="container">
+					<!-- 导航栏 -->
+					<nav class="topbar-nav">
+						<a href="index.html">仿米商城</a>
+						<span class="sep">|</span>
+						<a href="javascript:;">loT</a>
+						<span class="sep">|</span>
+						<a href="javascript:;">MIUI</a>
+						<span class="sep">|</span>
+						<a href="javascript:;">云服务</a>
+						<span class="sep">|</span>
+						<a href="javascript:;">金融</a>
+						<span class="sep">|</span>
+						<a href="javascript:;">有品</a>
+						<span class="sep">|</span>
+						<a href="javascript:;">小爱开放平台</a>
+						<span class="sep">|</span>
+						<a href="javascript:;">企业团购</a>
+						<span class="sep">|</span>
+						<a href="javascript:;">资质证照</a>
+						<span class="sep">|</span>
+						<a href="javascript:;">协议规则</a>
+						<span class="sep">|</span>
+						<a href="javascript:;" id="J_siteDownloadApp">
+							下载app
+							<span class="appcode">
+								<img src="/img/header/download.png" alt="仿米商城" width="90" height="90">
+								仿米商城APP
+							</span>
+						</a>
+						<span class="sep">|</span>
+						<a href="javascript:;">Select Location</a>
+					</nav>
+					<!-- 购物车 -->
+					<div id="J_miniCartTrigger" class="topbar-cart">
+						<a href="shopping.html">
+							<em></em>
+							购物车
+							<span>（0）</span>
+						</a>
+						<div id="J_miniCartMenu" class="cart-menu">
+							购物车中还没有商品，赶紧选购吧！
+						</div>
+					</div>
+					<!-- 登录注册 -->
+					<div id="J_siteInfo" class="topbar-info">
+						<a href="login.html">登录</a>
+						<span class="sep">|</span>
+						<a href="register.html">注册</a>
+						<span class="sep">|</span>
+						<a href="javascript:;">消息通知</a>
+					</div>
+					<div id="J_siteUserInfo" class="topbar-info">
+						<span class="user">
+							<a rel="nofollow" class="user-name" href="javascript:;" target="_blank">
+								<span class="name">天然呆·H</span>
+								<i class="iconfont-arrow-down-mini">↓</i>
+							</a>
+							<div id="J_userMenuWrapper" class="user-menu-wrapper">
+								<ul class="user-menu">
+									<li><a rel="nofollow" href="javascript:;" target="_blank">个人中心</a></li>
+									<li><a rel="nofollow" href="javascript:;" target="_blank">评价晒单</a></li>
+									<li><a rel="nofollow" href="javascript:;" target="_blank">我的喜欢</a></li>
+									<li><a rel="nofollow" href="javascript:;" target="_blank">小米账户</a></li>
+									<li><a rel="nofollow" id="J_userLogout" href="javascript:;">退出登录</a></li>
+								</ul>
+							</div>
+						</span>
+						<span class="sep">|</span>
+						<a href="javascript:;">消息通知</a>
+						<span class="sep">|</span>
+						<a href="javascript:;">我的订单</a>
+					</div>
+				</div>
+			</div>
+			<!-- 顶部导航栏end -->
+			<!-- 头部导航栏start -->
+			<div class="site-header">
+				<div class="container myclear">
+					<!-- 仿米logo -->
+					<div class="header-logo">
+						<ul class="myclear">
+							<li><a href="index.html"></a></li>
+							<li></li>
+						</ul>
+					</div>
+					<!-- 导航栏 -->
+					<nav class="header-nav myclear">
+						<ul id="J_childrenList">
+							<li class="nav-item">
+								<a href="javascript:void(0);">仿米手机</a>
+								<div class="item-children">
+									<div class="container">
+										<ul class="children-list myclear">
+											<li>
+												<a href="javascript:;">
+													<div class="figure-thumb">
+														<img src="static/img/header/XM9%20Pro%205G.webp" width="160" height="110" alt="仿米9 Pro 5G">
+													</div>
+													<div class="title">仿米9 Pro 5G</div>
+													<p class="price">3699元起</p>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:;">
+													<div class="figure-thumb">
+														<img src="static/img/header/XM9%20Pro%205G.webp" width="160" height="110" alt="仿米9 Pro 5G">
+													</div>
+													<div class="title">仿米9 Pro 5G</div>
+													<p class="price">3699元起</p>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:;">
+													<div class="figure-thumb">
+														<img src="static/img/header/XM9%20Pro%205G.webp" width="160" height="110" alt="仿米9 Pro 5G">
+													</div>
+													<div class="title">仿米9 Pro 5G</div>
+													<p class="price">3699元起</p>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:;">
+													<div class="figure-thumb">
+														<img src="static/img/header/XM9%20Pro%205G.webp" width="160" height="110" alt="仿米9 Pro 5G">
+													</div>
+													<div class="title">仿米9 Pro 5G</div>
+													<p class="price">3699元起</p>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:;">
+													<div class="figure-thumb">
+														<img src="static/img/header/XM9%20Pro%205G.webp" width="160" height="110" alt="仿米9 Pro 5G">
+													</div>
+													<div class="title">仿米9 Pro 5G</div>
+													<p class="price">3699元起</p>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:;">
+													<div class="figure-thumb">
+														<img src="static/img/header/XM9%20Pro%205G.webp" width="160" height="110" alt="仿米9 Pro 5G">
+													</div>
+													<div class="title">仿米9 Pro 5G</div>
+													<p class="price">3699元起</p>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a href="javascript:void(0);">Redmi仿米</a>
+								<div class="item-children">
+									<div class="container">
+										<ul class="children-list myclear">
+											<li>
+												<a href="javascript:;">
+													<div class="figure-thumb">
+														<img src="static/img/header/Redmi%20K30%205G.webp" width="160" height="110" alt="仿米9 Pro 5G">
+													</div>
+													<div class="title">Redmi K30 5G</div>
+													<p class="price">1999元起</p>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:;">
+													<div class="figure-thumb">
+														<img src="static/img/header/Redmi%20K30%205G.webp" width="160" height="110" alt="仿米9 Pro 5G">
+													</div>
+													<div class="title">Redmi K30 5G</div>
+													<p class="price">1999元起</p>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:;">
+													<div class="figure-thumb">
+														<img src="static/img/header/Redmi%20K30%205G.webp" width="160" height="110" alt="仿米9 Pro 5G">
+													</div>
+													<div class="title">Redmi K30 5G</div>
+													<p class="price">1999元起</p>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:;">
+													<div class="figure-thumb">
+														<img src="static/img/header/Redmi%20K30%205G.webp" width="160" height="110" alt="仿米9 Pro 5G">
+													</div>
+													<div class="title">Redmi K30 5G</div>
+													<p class="price">1999元起</p>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:;">
+													<div class="figure-thumb">
+														<img src="static/img/header/Redmi%20K30%205G.webp" width="160" height="110" alt="仿米9 Pro 5G">
+													</div>
+													<div class="title">Redmi K30 5G</div>
+													<p class="price">1999元起</p>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:;">
+													<div class="figure-thumb">
+														<img src="static/img/header/Redmi%20K30%205G.webp" width="160" height="110" alt="仿米9 Pro 5G">
+													</div>
+													<div class="title">Redmi K30 5G</div>
+													<p class="price">1999元起</p>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a href="javascript:void(0);">电视</a>
+								<div class="item-children">
+									<div class="container">
+										<ul class="children-list myclear">
+											<li>
+												<a href="javascript:;">
+													<div class="figure-thumb">
+														<img src="static/img/header/Redmi%20dsj%20R70A.webp" width="160" height="110" alt="仿米9 Pro 5G">
+													</div>
+													<div class="title">Redmi 仿米电视 70英寸 R70A</div>
+													<p class="price">2999元</p>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:;">
+													<div class="figure-thumb">
+														<img src="static/img/header/Redmi%20dsj%20R70A.webp" width="160" height="110" alt="仿米9 Pro 5G">
+													</div>
+													<div class="title">Redmi 仿米电视 70英寸 R70A</div>
+													<p class="price">2999元</p>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:;">
+													<div class="figure-thumb">
+														<img src="static/img/header/Redmi%20dsj%20R70A.webp" width="160" height="110" alt="仿米9 Pro 5G">
+													</div>
+													<div class="title">Redmi 仿米电视 70英寸 R70A</div>
+													<p class="price">2999元</p>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:;">
+													<div class="figure-thumb">
+														<img src="static/img/header/Redmi%20dsj%20R70A.webp" width="160" height="110" alt="仿米9 Pro 5G">
+													</div>
+													<div class="title">Redmi 仿米电视 70英寸 R70A</div>
+													<p class="price">2999元</p>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:;">
+													<div class="figure-thumb">
+														<img src="static/img/header/Redmi%20dsj%20R70A.webp" width="160" height="110" alt="仿米9 Pro 5G">
+													</div>
+													<div class="title">Redmi 仿米电视 70英寸 R70A</div>
+													<p class="price">2999元</p>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:;">
+													<div class="figure-thumb">
+														<img src="static/img/header/Redmi%20dsj%20R70A.webp" width="160" height="110" alt="仿米9 Pro 5G">
+													</div>
+													<div class="title">Redmi 仿米电视 70英寸 R70A</div>
+													<p class="price">2999元</p>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a href="javascript:void(0);">笔记本</a>
+								<div class="item-children">
+									<div class="container">
+										<ul class="children-list myclear">
+											<li>
+												<a href="javascript:;">
+													<div class="figure-thumb">
+														<img src="static/img/header/Redmibook%2013.webp" width="160" height="110" alt="仿米9 Pro 5G">
+													</div>
+													<div class="title">RedmiBook 13</div>
+													<p class="price">4199元起</p>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:;">
+													<div class="figure-thumb">
+														<img src="static/img/header/Redmibook%2013.webp" width="160" height="110" alt="仿米9 Pro 5G">
+													</div>
+													<div class="title">RedmiBook 13</div>
+													<p class="price">4199元起</p>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:;">
+													<div class="figure-thumb">
+														<img src="static/img/header/Redmibook%2013.webp" width="160" height="110" alt="仿米9 Pro 5G">
+													</div>
+													<div class="title">RedmiBook 13</div>
+													<p class="price">4199元起</p>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:;">
+													<div class="figure-thumb">
+														<img src="static/img/header/Redmibook%2013.webp" width="160" height="110" alt="仿米9 Pro 5G">
+													</div>
+													<div class="title">RedmiBook 13</div>
+													<p class="price">4199元起</p>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:;">
+													<div class="figure-thumb">
+														<img src="static/img/header/Redmibook%2013.webp" width="160" height="110" alt="仿米9 Pro 5G">
+													</div>
+													<div class="title">RedmiBook 13</div>
+													<p class="price">4199元起</p>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:;">
+													<div class="figure-thumb">
+														<img src="static/img/header/Redmibook%2013.webp" width="160" height="110" alt="仿米9 Pro 5G">
+													</div>
+													<div class="title">RedmiBook 13</div>
+													<p class="price">4199元起</p>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a href="javascript:void(0);">家电</a>
+								<div class="item-children">
+									<div class="container">
+										<ul class="children-list myclear">
+											<li>
+												<a href="javascript:;">
+													<div class="figure-thumb">
+														<img src="static/img/header/XM%20kt%20C1.webp" width="160" height="110" alt="仿米9 Pro 5G">
+													</div>
+													<div class="title">米家互联网空调C1（一级能效）</div>
+													<p class="price">2599元</p>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:;">
+													<div class="figure-thumb">
+														<img src="static/img/header/XM%20kt%20C1.webp" width="160" height="110" alt="仿米9 Pro 5G">
+													</div>
+													<div class="title">米家互联网空调C1（一级能效）</div>
+													<p class="price">2599元</p>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:;">
+													<div class="figure-thumb">
+														<img src="static/img/header/XM%20kt%20C1.webp" width="160" height="110" alt="仿米9 Pro 5G">
+													</div>
+													<div class="title">米家互联网空调C1（一级能效）</div>
+													<p class="price">2599元</p>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:;">
+													<div class="figure-thumb">
+														<img src="static/img/header/XM%20kt%20C1.webp" width="160" height="110" alt="仿米9 Pro 5G">
+													</div>
+													<div class="title">米家互联网空调C1（一级能效）</div>
+													<p class="price">2599元</p>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:;">
+													<div class="figure-thumb">
+														<img src="static/img/header/XM%20kt%20C1.webp" width="160" height="110" alt="仿米9 Pro 5G">
+													</div>
+													<div class="title">米家互联网空调C1（一级能效）</div>
+													<p class="price">2599元</p>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:;">
+													<div class="figure-thumb">
+														<img src="static/img/header/XM%20kt%20C1.webp" width="160" height="110" alt="仿米9 Pro 5G">
+													</div>
+													<div class="title">米家互联网空调C1（一级能效）</div>
+													<p class="price">2599元</p>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a href="javascript:void(0);">路由器</a>
+								<div class="item-children">
+									<div class="container">
+										<ul class="children-list myclear">
+											<li>
+												<a href="javascript:;">
+													<div class="figure-thumb">
+														<img src="static/img/header/Redmi%20lyq%20AC2100.webp" width="160" height="110" alt="仿米9 Pro 5G">
+													</div>
+													<div class="title">Redmi路由器AC2100</div>
+													<p class="price">169元</p>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:;">
+													<div class="figure-thumb">
+														<img src="static/img/header/Redmi%20lyq%20AC2100.webp" width="160" height="110" alt="仿米9 Pro 5G">
+													</div>
+													<div class="title">Redmi路由器AC2100</div>
+													<p class="price">169元</p>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:;">
+													<div class="figure-thumb">
+														<img src="static/img/header/Redmi%20lyq%20AC2100.webp" width="160" height="110" alt="仿米9 Pro 5G">
+													</div>
+													<div class="title">Redmi路由器AC2100</div>
+													<p class="price">169元</p>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:;">
+													<div class="figure-thumb">
+														<img src="static/img/header/Redmi%20lyq%20AC2100.webp" width="160" height="110" alt="仿米9 Pro 5G">
+													</div>
+													<div class="title">Redmi路由器AC2100</div>
+													<p class="price">169元</p>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:;">
+													<div class="figure-thumb">
+														<img src="static/img/header/Redmi%20lyq%20AC2100.webp" width="160" height="110" alt="仿米9 Pro 5G">
+													</div>
+													<div class="title">Redmi路由器AC2100</div>
+													<p class="price">169元</p>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:;">
+													<div class="figure-thumb">
+														<img src="static/img/header/Redmi%20lyq%20AC2100.webp" width="160" height="110" alt="仿米9 Pro 5G">
+													</div>
+													<div class="title">Redmi路由器AC2100</div>
+													<p class="price">169元</p>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a href="javascript:void(0);">智能硬件</a>
+								<div class="item-children">
+									<div class="container">
+										<ul class="children-list myclear">
+											<li>
+												<a href="javascript:;">
+													<div class="figure-thumb">
+														<img src="static/img/header/Redmi%20xiaai.webp" width="160" height="110" alt="仿米9 Pro 5G">
+													</div>
+													<div class="title">Redmi小爱音箱 Play</div>
+													<p class="price">79元</p>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:;">
+													<div class="figure-thumb">
+														<img src="static/img/header/Redmi%20xiaai.webp" width="160" height="110" alt="仿米9 Pro 5G">
+													</div>
+													<div class="title">Redmi小爱音箱 Play</div>
+													<p class="price">79元</p>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:;">
+													<div class="figure-thumb">
+														<img src="static/img/header/Redmi%20xiaai.webp" width="160" height="110" alt="仿米9 Pro 5G">
+													</div>
+													<div class="title">Redmi小爱音箱 Play</div>
+													<p class="price">79元</p>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:;">
+													<div class="figure-thumb">
+														<img src="static/img/header/Redmi%20xiaai.webp" width="160" height="110" alt="仿米9 Pro 5G">
+													</div>
+													<div class="title">Redmi小爱音箱 Play</div>
+													<p class="price">79元</p>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:;">
+													<div class="figure-thumb">
+														<img src="static/img/header/Redmi%20xiaai.webp" width="160" height="110" alt="仿米9 Pro 5G">
+													</div>
+													<div class="title">Redmi小爱音箱 Play</div>
+													<p class="price">79元</p>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:;">
+													<div class="figure-thumb">
+														<img src="static/img/header/Redmi%20xiaai.webp" width="160" height="110" alt="仿米9 Pro 5G">
+													</div>
+													<div class="title">Redmi小爱音箱 Play</div>
+													<p class="price">79元</p>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a href="javascript:void(0);">服务</a>
+							</li>
+							<li class="nav-item">
+								<a href="javascript:void(0);">社区</a>
+							</li>
+						</ul>
+					</nav>
+					<!-- 搜索 -->
+					<div class="myclear header-search ">
+						<input id="search" class="search-text" type="text" id="search" />
+						<input class="search-btn" type="text" />
+						<div class="search-hot-words">
+							<a href="javascript:;">仿米9 Pro 5G</a>
+							<a href="javascript:;">Redmi Note 8</a>
+						</div>
+						<div id="J_keywordList" class="keyword-list">
+							<ul class="result-list">
+								<li><a href="javascript:;">仿米 9</a></li>
+								<li><a href="javascript:;">Redmi K20 pro</a></li>
+								<li><a href="javascript:;">Redmi K20</a></li>
+								<li><a href="javascript:;">Redmi Note 7 Pro</a></li>
+								<li><a href="javascript:;">Redmi note 7</a></li>
+								<li><a href="javascript:;">仿米电视4c</a></li>
+								<li><a href="javascript:;">电视32英寸</a></li>
+								<li><a href="javascript:;">笔记本pro</a></li>
+								<li><a href="javascript:;">小爱音箱</a></li>
+								<li><a href="javascript:;">净水器</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 头部导航栏end -->
+		</header>
+		<!-- 主页 -->
+		<section>
+			<!-- home-container start -->
+			<header class="home-container">
+				<div class="container">
+					<div id="J_homeSwiper" class="swiper-wrapper">
+						<ul id="J_categoryList" class="swiper-category-list">
+							<li class="category-li">
+								<a class="title" href="javascript:;">
+									手机 电话卡
+									<em></em>
+								</a>
+								<div class="children">
+									<ul class="children-list myclear">
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category1.webp">
+												<span class="text">Redmi K30 4G</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category1.webp">
+												<span class="text">Redmi K30 4G</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category1.webp">
+												<span class="text">Redmi K30 4G</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category1.webp">
+												<span class="text">Redmi K30 4G</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category1.webp">
+												<span class="text">Redmi K30 4G</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category1.webp">
+												<span class="text">Redmi K30 4G</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category1.webp">
+												<span class="text">Redmi K30 4G</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category1.webp">
+												<span class="text">Redmi K30 4G</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category1.webp">
+												<span class="text">Redmi K30 4G</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category1.webp">
+												<span class="text">Redmi K30 4G</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category1.webp">
+												<span class="text">Redmi K30 4G</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category1.webp">
+												<span class="text">Redmi K30 4G</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category1.webp">
+												<span class="text">Redmi K30 4G</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category1.webp">
+												<span class="text">Redmi K30 4G</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category1.webp">
+												<span class="text">Redmi K30 4G</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category1.webp">
+												<span class="text">Redmi K30 4G</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category1.webp">
+												<span class="text">Redmi K30 4G</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category1.webp">
+												<span class="text">Redmi K30 4G</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category1.webp">
+												<span class="text">Redmi K30 4G</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category1.webp">
+												<span class="text">Redmi K30 4G</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category1.webp">
+												<span class="text">Redmi K30 4G</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category1.webp">
+												<span class="text">Redmi K30 4G</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category1.webp">
+												<span class="text">Redmi K30 4G</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category1.webp">
+												<span class="text">Redmi K30 4G</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="category-li">
+								<a class="title" href="javascript:;">
+									电视 盒子
+									<em></em>
+								</a>
+								<div class="children">
+									<ul class="children-list myclear">
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category2.webp">
+												<span class="text">仿米电视5 55英寸</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category2.webp">
+												<span class="text">仿米电视5 55英寸</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category2.webp">
+												<span class="text">仿米电视5 55英寸</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category2.webp">
+												<span class="text">仿米电视5 55英寸</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category2.webp">
+												<span class="text">仿米电视5 55英寸</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category2.webp">
+												<span class="text">仿米电视5 55英寸</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category2.webp">
+												<span class="text">仿米电视5 55英寸</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category2.webp">
+												<span class="text">仿米电视5 55英寸</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category2.webp">
+												<span class="text">仿米电视5 55英寸</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category2.webp">
+												<span class="text">仿米电视5 55英寸</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category2.webp">
+												<span class="text">仿米电视5 55英寸</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category2.webp">
+												<span class="text">仿米电视5 55英寸</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category2.webp">
+												<span class="text">仿米电视5 55英寸</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category2.webp">
+												<span class="text">仿米电视5 55英寸</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category2.webp">
+												<span class="text">仿米电视5 55英寸</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category2.webp">
+												<span class="text">仿米电视5 55英寸</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category2.webp">
+												<span class="text">仿米电视5 55英寸</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category2.webp">
+												<span class="text">仿米电视5 55英寸</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category2.webp">
+												<span class="text">仿米电视5 55英寸</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category2.webp">
+												<span class="text">仿米电视5 55英寸</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category2.webp">
+												<span class="text">仿米电视5 55英寸</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category2.webp">
+												<span class="text">仿米电视5 55英寸</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category2.webp">
+												<span class="text">仿米电视5 55英寸</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category2.webp">
+												<span class="text">仿米电视5 55英寸</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="category-li">
+								<a class="title" href="javascript:;">
+									笔记本 显示器 平板
+									<em></em>
+								</a>
+								<div class="children">
+									<ul class="children-list myclear">
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category3.webp">
+												<span class="text">RedmiBook 13</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category3.webp">
+												<span class="text">RedmiBook 13</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category3.webp">
+												<span class="text">RedmiBook 13</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category3.webp">
+												<span class="text">RedmiBook 13</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category3.webp">
+												<span class="text">RedmiBook 13</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category3.webp">
+												<span class="text">RedmiBook 13</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category3.webp">
+												<span class="text">RedmiBook 13</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category3.webp">
+												<span class="text">RedmiBook 13</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category3.webp">
+												<span class="text">RedmiBook 13</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category3.webp">
+												<span class="text">RedmiBook 13</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category3.webp">
+												<span class="text">RedmiBook 13</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category3.webp">
+												<span class="text">RedmiBook 13</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category3.webp">
+												<span class="text">RedmiBook 13</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category3.webp">
+												<span class="text">RedmiBook 13</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category3.webp">
+												<span class="text">RedmiBook 13</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category3.webp">
+												<span class="text">RedmiBook 13</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category3.webp">
+												<span class="text">RedmiBook 13</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category3.webp">
+												<span class="text">RedmiBook 13</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category3.webp">
+												<span class="text">RedmiBook 13</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category3.webp">
+												<span class="text">RedmiBook 13</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category3.webp">
+												<span class="text">RedmiBook 13</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category3.webp">
+												<span class="text">RedmiBook 13</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category3.webp">
+												<span class="text">RedmiBook 13</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category3.webp">
+												<span class="text">RedmiBook 13</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="category-li">
+								<a class="title" href="javascript:;">
+									家电 插线排
+									<em></em>
+								</a>
+								<div class="children">
+									<ul class="children-list myclear">
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category4.webp">
+												<span class="text">冰箱</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category4.webp">
+												<span class="text">冰箱</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category4.webp">
+												<span class="text">冰箱</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category4.webp">
+												<span class="text">冰箱</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category4.webp">
+												<span class="text">冰箱</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category4.webp">
+												<span class="text">冰箱</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category4.webp">
+												<span class="text">冰箱</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category4.webp">
+												<span class="text">冰箱</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category4.webp">
+												<span class="text">冰箱</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category4.webp">
+												<span class="text">冰箱</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category4.webp">
+												<span class="text">冰箱</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category4.webp">
+												<span class="text">冰箱</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category4.webp">
+												<span class="text">冰箱</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category4.webp">
+												<span class="text">冰箱</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category4.webp">
+												<span class="text">冰箱</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category4.webp">
+												<span class="text">冰箱</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category4.webp">
+												<span class="text">冰箱</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category4.webp">
+												<span class="text">冰箱</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category4.webp">
+												<span class="text">冰箱</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category4.webp">
+												<span class="text">冰箱</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category4.webp">
+												<span class="text">冰箱</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category4.webp">
+												<span class="text">冰箱</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category4.webp">
+												<span class="text">冰箱</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category4.webp">
+												<span class="text">冰箱</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category4.webp">
+												<span class="text">冰箱</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category4.webp">
+												<span class="text">冰箱</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category4.webp">
+												<span class="text">冰箱</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category4.webp">
+												<span class="text">冰箱</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="category-li">
+								<a class="title" href="javascript:;">
+									出行 穿戴
+									<em></em>
+								</a>
+								<div class="children">
+									<ul class="children-list myclear">
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category5.webp">
+												<span class="text">仿米手表</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category5.webp">
+												<span class="text">仿米手表</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category5.webp">
+												<span class="text">仿米手表</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category5.webp">
+												<span class="text">仿米手表</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category5.webp">
+												<span class="text">仿米手表</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category5.webp">
+												<span class="text">仿米手表</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category5.webp">
+												<span class="text">仿米手表</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category5.webp">
+												<span class="text">仿米手表</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category5.webp">
+												<span class="text">仿米手表</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category5.webp">
+												<span class="text">仿米手表</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category5.webp">
+												<span class="text">仿米手表</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category5.webp">
+												<span class="text">仿米手表</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category5.webp">
+												<span class="text">仿米手表</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category5.webp">
+												<span class="text">仿米手表</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category5.webp">
+												<span class="text">仿米手表</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category5.webp">
+												<span class="text">仿米手表</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category5.webp">
+												<span class="text">仿米手表</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category5.webp">
+												<span class="text">仿米手表</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category5.webp">
+												<span class="text">仿米手表</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category5.webp">
+												<span class="text">仿米手表</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category5.webp">
+												<span class="text">仿米手表</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category5.webp">
+												<span class="text">仿米手表</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category5.webp">
+												<span class="text">仿米手表</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category5.webp">
+												<span class="text">仿米手表</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category5.webp">
+												<span class="text">仿米手表</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="category-li">
+								<a class="title" href="javascript:;">
+									智能 路由器
+									<em></em>
+								</a>
+								<div class="children">
+									<ul class="children-list myclear">
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category6.jpg">
+												<span class="text">打印机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category6.jpg">
+												<span class="text">打印机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category6.jpg">
+												<span class="text">打印机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category6.jpg">
+												<span class="text">打印机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category6.jpg">
+												<span class="text">打印机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category6.jpg">
+												<span class="text">打印机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category6.jpg">
+												<span class="text">打印机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category6.jpg">
+												<span class="text">打印机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category6.jpg">
+												<span class="text">打印机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category6.jpg">
+												<span class="text">打印机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category6.jpg">
+												<span class="text">打印机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category6.jpg">
+												<span class="text">打印机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category6.jpg">
+												<span class="text">打印机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category6.jpg">
+												<span class="text">打印机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category6.jpg">
+												<span class="text">打印机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category6.jpg">
+												<span class="text">打印机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category6.jpg">
+												<span class="text">打印机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category6.jpg">
+												<span class="text">打印机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category6.jpg">
+												<span class="text">打印机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category6.jpg">
+												<span class="text">打印机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category6.jpg">
+												<span class="text">打印机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category6.jpg">
+												<span class="text">打印机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category6.jpg">
+												<span class="text">打印机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category6.jpg">
+												<span class="text">打印机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category6.jpg">
+												<span class="text">打印机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category6.jpg">
+												<span class="text">打印机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category6.jpg">
+												<span class="text">打印机</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="category-li">
+								<a class="title" href="javascript:;">
+									电源 配件
+									<em></em>
+								</a>
+								<div class="children">
+									<ul class="children-list myclear">
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category7.jpg">
+												<span class="text">移动电源</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category7.jpg">
+												<span class="text">移动电源</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category7.jpg">
+												<span class="text">移动电源</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category7.jpg">
+												<span class="text">移动电源</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category7.jpg">
+												<span class="text">移动电源</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category7.jpg">
+												<span class="text">移动电源</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category7.jpg">
+												<span class="text">移动电源</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category7.jpg">
+												<span class="text">移动电源</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category7.jpg">
+												<span class="text">移动电源</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category7.jpg">
+												<span class="text">移动电源</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category7.jpg">
+												<span class="text">移动电源</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category7.jpg">
+												<span class="text">移动电源</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category7.jpg">
+												<span class="text">移动电源</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category7.jpg">
+												<span class="text">移动电源</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category7.jpg">
+												<span class="text">移动电源</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category7.jpg">
+												<span class="text">移动电源</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category7.jpg">
+												<span class="text">移动电源</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category7.jpg">
+												<span class="text">移动电源</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category7.jpg">
+												<span class="text">移动电源</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category7.jpg">
+												<span class="text">移动电源</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category7.jpg">
+												<span class="text">移动电源</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category7.jpg">
+												<span class="text">移动电源</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category7.jpg">
+												<span class="text">移动电源</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category7.jpg">
+												<span class="text">移动电源</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="category-li">
+								<a class="title" href="javascript:;">
+									健康 儿童
+									<em></em>
+								</a>
+								<div class="children">
+									<ul class="children-list myclear">
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category8.jpg">
+												<span class="text">洗手机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category8.jpg">
+												<span class="text">洗手机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category8.jpg">
+												<span class="text">洗手机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category8.jpg">
+												<span class="text">洗手机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category8.jpg">
+												<span class="text">洗手机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category8.jpg">
+												<span class="text">洗手机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category8.jpg">
+												<span class="text">洗手机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category8.jpg">
+												<span class="text">洗手机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category8.jpg">
+												<span class="text">洗手机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category8.jpg">
+												<span class="text">洗手机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category8.jpg">
+												<span class="text">洗手机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category8.jpg">
+												<span class="text">洗手机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category8.jpg">
+												<span class="text">洗手机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category8.jpg">
+												<span class="text">洗手机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category8.jpg">
+												<span class="text">洗手机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category8.jpg">
+												<span class="text">洗手机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category8.jpg">
+												<span class="text">洗手机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category8.jpg">
+												<span class="text">洗手机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category8.jpg">
+												<span class="text">洗手机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category8.jpg">
+												<span class="text">洗手机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category8.jpg">
+												<span class="text">洗手机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category8.jpg">
+												<span class="text">洗手机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category8.jpg">
+												<span class="text">洗手机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category8.jpg">
+												<span class="text">洗手机</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category8.jpg">
+												<span class="text">洗手机</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="category-li">
+								<a class="title" href="javascript:;">
+									耳机 音响
+									<em></em>
+								</a>
+								<div class="children">
+									<ul class="children-list myclear">
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category9.webp">
+												<span class="text">音响 Pro</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category9.webp">
+												<span class="text">音响 Pro</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category9.webp">
+												<span class="text">音响 Pro</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category9.webp">
+												<span class="text">音响 Pro</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category9.webp">
+												<span class="text">音响 Pro</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category9.webp">
+												<span class="text">音响 Pro</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category9.webp">
+												<span class="text">音响 Pro</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category9.webp">
+												<span class="text">音响 Pro</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category9.webp">
+												<span class="text">音响 Pro</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category9.webp">
+												<span class="text">音响 Pro</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category9.webp">
+												<span class="text">音响 Pro</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category9.webp">
+												<span class="text">音响 Pro</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category9.webp">
+												<span class="text">音响 Pro</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category9.webp">
+												<span class="text">音响 Pro</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category9.webp">
+												<span class="text">音响 Pro</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category9.webp">
+												<span class="text">音响 Pro</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category9.webp">
+												<span class="text">音响 Pro</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category9.webp">
+												<span class="text">音响 Pro</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category9.webp">
+												<span class="text">音响 Pro</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category9.webp">
+												<span class="text">音响 Pro</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category9.webp">
+												<span class="text">音响 Pro</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category9.webp">
+												<span class="text">音响 Pro</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category9.webp">
+												<span class="text">音响 Pro</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category9.webp">
+												<span class="text">音响 Pro</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="category-li">
+								<a class="title" href="javascript:;">
+									生活 箱包
+									<em></em>
+								</a>
+								<div class="children">
+									<ul class="children-list myclear">
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category10.webp">
+												<span class="text">小背包</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category10.webp">
+												<span class="text">小背包</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category10.webp">
+												<span class="text">小背包</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category10.webp">
+												<span class="text">小背包</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category10.webp">
+												<span class="text">小背包</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category10.webp">
+												<span class="text">小背包</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category10.webp">
+												<span class="text">小背包</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category10.webp">
+												<span class="text">小背包</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category10.webp">
+												<span class="text">小背包</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category10.webp">
+												<span class="text">小背包</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category10.webp">
+												<span class="text">小背包</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category10.webp">
+												<span class="text">小背包</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category10.webp">
+												<span class="text">小背包</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category10.webp">
+												<span class="text">小背包</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category10.webp">
+												<span class="text">小背包</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category10.webp">
+												<span class="text">小背包</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category10.webp">
+												<span class="text">小背包</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category10.webp">
+												<span class="text">小背包</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category10.webp">
+												<span class="text">小背包</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category10.webp">
+												<span class="text">小背包</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category10.webp">
+												<span class="text">小背包</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category10.webp">
+												<span class="text">小背包</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category10.webp">
+												<span class="text">小背包</span>
+											</a>
+										</li>
+										<li>
+											<a class="link myclear" href="">
+												<img src="static/img/section/header/category10.webp">
+												<span class="text">小背包</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+						<ul class="swiper-list myclear">
+							<li>
+								<a href="javascript:;">
+									<img src="static/img/section/header/0.jpg">
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<img src="static/img/section/header/1.webp">
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<img src="static/img/section/header/2.webp">
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<img src="static/img/section/header/3.webp">
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<img src="static/img/section/header/4.webp">
+								</a>
+							</li>
+						</ul>
+						<ul class="swiper-pagination myclear">
+							<li class="active"></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					</div>
+					<div class="home-hero-sub myclear">
+						<ul class="home-channel-list myclear">
+							<li><a href="javascript:;"><img src="static/img/section/header/m1.png" alt="小米闪购">小米闪购</a></li>
+							<li><a href="javascript:;"><img src="static/img/section/header/m2.png" alt="企业团购">企业团购</a></li>
+							<li><a href="javascript:;"><img src="static/img/section/header/m3.png" alt="F码通道">F码通道</a></li>
+							<li><a href="javascript:;"><img src="static/img/section/header/m4.png" alt="米粉卡">米饭卡</a></li>
+							<li><a href="javascript:;"><img src="static/img/section/header/m5.png" alt="以旧换新">以旧换新</a></li>
+							<li><a href="javascript:;"><img src="static/img/section/header/m6.png" alt="话费充值">话费充值</a></li>
+						</ul>
+						<ul class="home-promo-list myclear">
+							<li><a href=""><img src="static/img/section/header/7bc54a61b927dd8c54ddd39a0acf0254.jpg" alt=""></a></li>
+							<li><a href=""><img src="static/img/section/header/94c74e01afe50a86c3a87ff030b85781.jpg" alt=""></a></li>
+							<li><a href=""><img src="static/img/section/header/816a66edef10673b4768128b41804cae.jpg" alt=""></a></li>
+						</ul>
+					</div>
+				</div>
+			</header>
+			<!-- home-container end -->
+			<!-- 主体内容的分页部分start -->
+			<div class="page-main">
+				<div class="container">
+					<!-- 仿米闪购 -->
+					<div class="main main-flash">
+						<div class="box-hd">
+							<h2>仿米闪购</h2>
+							<div class="swiper-controls">
+								<span class="swiper-flashsale-prev">&lt;</span>
+								<span class="swiper-flashsale-next">&gt;</span>
+							</div>
+						</div>
+						<div class="box-content myclear">
+							<div class="flashsale-countdown rainbow-item-4">
+								<div id="round_sj" class="round">14:00 场</div>
+								<img src="static/img/section/mian1/left.png" alt="仿米闪购">
+								<div class="desc">距离结束还有</div>
+								<div class="countdown myclear">
+									<span id="hou"></span>
+									<i>:</i>
+									<span id="minute"></span>
+									<i>:</i>
+									<span id="second"></span>
+								</div>
+							</div>
+							<div id="J_flashSaleList" class="flashsale-list">
+								<ul>
+									<li class="swiper-slide rainbow-item-1">
+										<a href="javascript:;">
+											<div class="thumb">
+												<img src="static/img/section/mian1/xm1-1.jpg">
+											</div>
+											<h3 class="title">MIJOY 抽纸青春版 24包/箱</h3>
+											<p class="desc">精选原生竹浆，健康环保</p>
+											<p class="price">27.90元<del>32.9元</del></p>
+										</a>
+									</li>
+									<li class="swiper-slide rainbow-item-2">
+										<a href="javascript:;">
+											<div class="thumb">
+												<img src="static/img/section/mian1/xm1-1.jpg">
+											</div>
+											<h3 class="title">MIJOY 抽纸青春版 24包/箱</h3>
+											<p class="desc">精选原生竹浆，健康环保</p>
+											<p class="price">27.90元<del>32.9元</del></p>
+										</a>
+									</li>
+									<li class="swiper-slide rainbow-item-3">
+										<a href="javascript:;">
+											<div class="thumb">
+												<img src="static/img/section/mian1/xm1-1.jpg">
+											</div>
+											<h3 class="title">MIJOY 抽纸青春版 24包/箱</h3>
+											<p class="desc">精选原生竹浆，健康环保</p>
+											<p class="price">27.90元<del>32.9元</del></p>
+										</a>
+									</li>
+									<li class="swiper-slide rainbow-item-4">
+										<a href="javascript:;">
+											<div class="thumb">
+												<img src="static/img/section/mian1/xm1-1.jpg">
+											</div>
+											<h3 class="title">MIJOY 抽纸青春版 24包/箱</h3>
+											<p class="desc">精选原生竹浆，健康环保</p>
+											<p class="price">27.90元<del>32.9元</del></p>
+										</a>
+									</li>
+									<li class="swiper-slide rainbow-item-5">
+										<a href="javascript:;">
+											<div class="thumb">
+												<img src="static/img/section/mian1/xm2-1.jpg">
+											</div>
+											<h3 class="title">米家电磁炉</h3>
+											<p class="desc">双频火力，精准控温</p>
+											<p class="price">285.00元<del>299元</del></p>
+										</a>
+									</li>
+									<li class="swiper-slide rainbow-item-6">
+										<a href="javascript:;">
+											<div class="thumb">
+												<img src="static/img/section/mian1/xm2-1.jpg">
+											</div>
+											<h3 class="title">米家电磁炉</h3>
+											<p class="desc">双频火力，精准控温</p>
+											<p class="price">285.00元<del>299元</del></p>
+										</a>
+									</li>
+									<li class="swiper-slide rainbow-item-7">
+										<a href="javascript:;">
+											<div class="thumb">
+												<img src="static/img/section/mian1/xm2-1.jpg">
+											</div>
+											<h3 class="title">米家电磁炉</h3>
+											<p class="desc">双频火力，精准控温</p>
+											<p class="price">285.00元<del>299元</del></p>
+										</a>
+									</li>
+									<li class="swiper-slide rainbow-item-8">
+										<a href="javascript:;">
+											<div class="thumb">
+												<img src="static/img/section/mian1/xm2-1.jpg">
+											</div>
+											<h3 class="title">米家电磁炉</h3>
+											<p class="desc">双频火力，精准控温</p>
+											<p class="price">285.00元<del>299元</del></p>
+										</a>
+									</li>
+									<li class="swiper-slide rainbow-item-9">
+										<a href="javascript:;">
+											<div class="thumb">
+												<img src="static/img/section/mian1/xm3-1.jpg">
+											</div>
+											<h3 class="title">米家 wiha 8合1棘轮螺丝刀 黑色</h3>
+											<p class="desc">轻巧集成 无忧家装</p>
+											<p class="price">89.00元<del>99元</del></p>
+										</a>
+									</li>
+									<li class="swiper-slide rainbow-item-10">
+										<a href="javascript:;">
+											<div class="thumb">
+												<img src="static/img/section/mian1/xm3-1.jpg">
+											</div>
+											<h3 class="title">米家 wiha 8合1棘轮螺丝刀 黑色</h3>
+											<p class="desc">轻巧集成 无忧家装</p>
+											<p class="price">89.00元<del>99元</del></p>
+										</a>
+									</li>
+									<li class="swiper-slide rainbow-item-11">
+										<a href="javascript:;">
+											<div class="thumb">
+												<img src="static/img/section/mian1/xm3-1.jpg">
+											</div>
+											<h3 class="title">米家 wiha 8合1棘轮螺丝刀 黑色</h3>
+											<p class="desc">轻巧集成 无忧家装</p>
+											<p class="price">89.00元<del>99元</del></p>
+										</a>
+									</li>
+									<li class="swiper-slide rainbow-item-12">
+										<a href="javascript:;">
+											<div class="thumb">
+												<img src="static/img/section/mian1/xm3-1.jpg">
+											</div>
+											<h3 class="title">米家 wiha 8合1棘轮螺丝刀 黑色</h3>
+											<p class="desc">轻巧集成 无忧家装</p>
+											<p class="price">89.00元<del>99元</del></p>
+										</a>
+									</li>
+									<li class="swiper-slide rainbow-item-13">
+										<a href="javascript:;">
+											<div class="thumb">
+												<img src="static/img/section/mian1/xm4-1.jpg">
+											</div>
+											<h3 class="title">仿米降噪耳机Type-C版 黑色</h3>
+											<p class="desc">随时随地，安静聆听好声音</p>
+											<p class="price">149.00元<del>299元</del></p>
+										</a>
+									</li>
+									<li class="swiper-slide rainbow-item-14">
+										<a href="javascript:;">
+											<div class="thumb">
+												<img src="static/img/section/mian1/xm4-1.jpg">
+											</div>
+											<h3 class="title">仿米降噪耳机Type-C版 黑色</h3>
+											<p class="desc">随时随地，安静聆听好声音</p>
+											<p class="price">149.00元<del>299元</del></p>
+										</a>
+									</li>
+									<li class="swiper-slide rainbow-item-15">
+										<a href="javascript:;">
+											<div class="thumb">
+												<img src="static/img/section/mian1/xm4-1.jpg">
+											</div>
+											<h3 class="title">仿米降噪耳机Type-C版 黑色</h3>
+											<p class="desc">随时随地，安静聆听好声音</p>
+											<p class="price">149.00元<del>299元</del></p>
+										</a>
+									</li>
+									<li class="swiper-slide rainbow-item-16">
+										<a href="javascript:;">
+											<div class="thumb">
+												<img src="static/img/section/mian1/xm4-1.jpg">
+											</div>
+											<h3 class="title">仿米降噪耳机Type-C版 黑色</h3>
+											<p class="desc">随时随地，安静聆听好声音</p>
+											<p class="price">149.00元<del>299元</del></p>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="home-banner-box"><a href="javascript:;"><img src="static/img/section/mian1/test.webp" alt=""></a></div>
+					<!-- 手机 -->
+					<div class="main main-iphon">
+						<div class="box-hd">
+							<h2>手机</h2>
+							<div class="more2">
+								<a class="more-link" href="javascript:;">查看全部<i></i></a>
+							</div>
+						</div>
+						<div class="box-content myclear">
+							<div class="left">
+								<ul>
+									<li class="brick-item"><a href="javascript:;"><img src="static/img/section/mian2/main2_1left.webp" alt=""></a></li>
+								</ul>
+							</div>
+							<div class="right" style="display: block;">
+								<ul class="myclear">
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian2/main2_1right.webp" alt=""></div>
+											<h3 class="title">Redmi K30 5G</h3>
+											<p class="desc">双模5G，120Hz流速屏</p>
+											<p class="price">1999元起</p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian2/main2_1right.webp" alt=""></div>
+											<h3 class="title">Redmi K30 5G</h3>
+											<p class="desc">双模5G，120Hz流速屏</p>
+											<p class="price">1999元起</p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian2/main2_1right.webp" alt=""></div>
+											<h3 class="title">Redmi K30 5G</h3>
+											<p class="desc">双模5G，120Hz流速屏</p>
+											<p class="price">1999元起</p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian2/main2_1right.webp" alt=""></div>
+											<h3 class="title">Redmi K30 5G</h3>
+											<p class="desc">双模5G，120Hz流速屏</p>
+											<p class="price">1999元起</p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian2/main2_1right.webp" alt=""></div>
+											<h3 class="title">Redmi K30 5G</h3>
+											<p class="desc">双模5G，120Hz流速屏</p>
+											<p class="price">1999元起</p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian2/main2_1right.webp" alt=""></div>
+											<h3 class="title">Redmi K30 5G</h3>
+											<p class="desc">双模5G，120Hz流速屏</p>
+											<p class="price">1999元起</p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian2/main2_1right.webp" alt=""></div>
+											<h3 class="title">Redmi K30 5G</h3>
+											<p class="desc">双模5G，120Hz流速屏</p>
+											<p class="price">1999元起</p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian2/main2_1right.webp" alt=""></div>
+											<h3 class="title">Redmi K30 5G</h3>
+											<p class="desc">双模5G，120Hz流速屏</p>
+											<p class="price">1999元起</p>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="home-banner-box"><a href="javascript:;"><img src="static/img/section/mian2/test.webp" alt=""></a></div>
+					<!-- 家电 -->
+					<div class="main main-household">
+						<div class="box-hd">
+							<h2>家电</h2>
+							<div class="more5">
+								<ul id="J_household" class="tab-list">
+									<li class="tab-active">热门</li>
+									<li>电视影音</li>
+								</ul>
+							</div>
+						</div>
+						<div class="box-content myclear">
+							<div class="left">
+								<ul>
+									<li class="brick-item"><a href="javascript:;"><img src="static/img/section/mian3/main3_1left.webp" alt=""></a></li>
+									<li class="brick-item"><a href="javascript:;"><img src="static/img/section/mian3/main3_2left.webp" alt=""></a></li>
+								</ul>
+							</div>
+							<div class="right">
+								<ul class="myclear">
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian3/main3_1right.webp" alt=""></div>
+											<h3 class="title">仿米全面屏电视E65A</h3>
+											<p class="desc">全面屏设计，人工智能语音</p>
+											<p class="price">2799元<del>3999元</del></p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian3/main3_1right.webp" alt=""></div>
+											<h3 class="title">仿米全面屏电视E65A</h3>
+											<p class="desc">全面屏设计，人工智能语音</p>
+											<p class="price">2799元<del>3999元</del></p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian3/main3_1right.webp" alt=""></div>
+											<h3 class="title">仿米全面屏电视E65A</h3>
+											<p class="desc">全面屏设计，人工智能语音</p>
+											<p class="price">2799元<del>3999元</del></p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian3/main3_1right.webp" alt=""></div>
+											<h3 class="title">仿米全面屏电视E65A</h3>
+											<p class="desc">全面屏设计，人工智能语音</p>
+											<p class="price">2799元<del>3999元</del></p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian3/main3_1right.webp" alt=""></div>
+											<h3 class="title">仿米全面屏电视E65A</h3>
+											<p class="desc">全面屏设计，人工智能语音</p>
+											<p class="price">2799元<del>3999元</del></p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian3/main3_1right.webp" alt=""></div>
+											<h3 class="title">仿米全面屏电视E65A</h3>
+											<p class="desc">全面屏设计，人工智能语音</p>
+											<p class="price">2799元<del>3999元</del></p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian3/main3_1right.webp" alt=""></div>
+											<h3 class="title">仿米全面屏电视E65A</h3>
+											<p class="desc">全面屏设计，人工智能语音</p>
+											<p class="price">2799元<del>3999元</del></p>
+										</a>
+									</li>
+									<div>
+										<li class="brick-item brick-item-m2 brick-item-m">
+											<a href="javascript:;">
+												<div class="figure"><img src="static/img/section/mian3/main3_x1right.webp"></div>
+												<h3 class="title">Air 13.3" 2019款</h3>
+												<p class="price">4999元起</p>
+											</a>
+										</li>
+										<li class="brick-item brick-item-m2 brick-item-m">
+											<a href="javascript:;">
+												<i></i>
+												<div class="more">
+													浏览更多
+													<small>热门</small>
+												</div>
+											</a>
+										</li>
+									</div>
+								</ul>
+							</div>
+							<div class="right">
+								<ul class="myclear">
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian3/main3_2right.webp" alt=""></div>
+											<h3 class="title">仿米全面屏电视E55A</h3>
+											<p class="desc">全面屏设计，人工智能语音</p>
+											<p class="price">2799元<del>3999元</del></p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian3/main3_2right.webp" alt=""></div>
+											<h3 class="title">仿米全面屏电视E55A</h3>
+											<p class="desc">全面屏设计，人工智能语音</p>
+											<p class="price">1899元<del>2099元</del></p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian3/main3_2right.webp" alt=""></div>
+											<h3 class="title">仿米全面屏电视E55A</h3>
+											<p class="desc">全面屏设计，人工智能语音</p>
+											<p class="price">1899元<del>2099元</del></p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian3/main3_2right.webp" alt=""></div>
+											<h3 class="title">仿米全面屏电视E55A</h3>
+											<p class="desc">全面屏设计，人工智能语音</p>
+											<p class="price">1899元<del>2099元</del></p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian3/main3_2right.webp" alt=""></div>
+											<h3 class="title">仿米全面屏电视E55A</h3>
+											<p class="desc">全面屏设计，人工智能语音</p>
+											<p class="price">1899元<del>2099元</del></p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian3/main3_2right.webp" alt=""></div>
+											<h3 class="title">仿米全面屏电视E55A</h3>
+											<p class="desc">全面屏设计，人工智能语音</p>
+											<p class="price">1899元<del>2099元</del></p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian3/main3_2right.webp" alt=""></div>
+											<h3 class="title">仿米全面屏电视E55A</h3>
+											<p class="desc">全面屏设计，人工智能语音</p>
+											<p class="price">1899元<del>2099元</del></p>
+										</a>
+									</li>
+									<div>
+										<li class="brick-item brick-item-m2 brick-item-m">
+											<a href="javascript:;">
+												<div class="figure"><img src="static/img/section/mian3/main3_x2right.jpg"></div>
+												<h3 class="title">仿米盒子4</h3>
+												<p class="price">299起</p>
+											</a>
+										</li>
+										<li class="brick-item brick-item-m2 brick-item-m">
+											<a href="javascript:;">
+												<i></i>
+												<div class="more">
+													浏览更多
+													<small>热门</small>
+												</div>
+											</a>
+										</li>
+									</div>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="home-banner-box"><a href="javascript:;"><img src="static/img/section/mian3/test.webp" alt=""></a></div>
+					<!-- 智能 -->
+					<div class="main main-capacity">
+						<div class="box-hd">
+							<h2>智能</h2>
+							<div class="more5">
+								<ul id="J_capacity" class="tab-list">
+									<li class="tab-active">热门</li>
+									<li>安防</li>
+									<li>出行</li>
+								</ul>
+							</div>
+						</div>
+						<div class="box-content myclear">
+							<div class="left">
+								<ul>
+									<li class="brick-item"><a href="javascript:;"><img src="static/img/section/mian4/main4_1left.webp" alt=""></a></li>
+									<li class="brick-item"><a href="javascript:;"><img src="static/img/section/mian4/main4_2left.webp" alt=""></a></li>
+								</ul>
+							</div>
+							<div class="right">
+								<ul class="myclear">
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian4/main4_1right.webp" alt=""></div>
+											<h3 class="title">仿米手环4</h3>
+											<p class="desc">大屏彩显，20天超长续航</p>
+											<p class="price">169元</p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian4/main4_1right.webp" alt=""></div>
+											<h3 class="title">仿米手环4</h3>
+											<p class="desc">大屏彩显，20天超长续航</p>
+											<p class="price">169元</p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian4/main4_1right.webp" alt=""></div>
+											<h3 class="title">仿米手环4</h3>
+											<p class="desc">大屏彩显，20天超长续航</p>
+											<p class="price">169元</p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian4/main4_1right.webp" alt=""></div>
+											<h3 class="title">仿米手环4</h3>
+											<p class="desc">大屏彩显，20天超长续航</p>
+											<p class="price">169元</p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian4/main4_1right.webp" alt=""></div>
+											<h3 class="title">仿米手环4</h3>
+											<p class="desc">大屏彩显，20天超长续航</p>
+											<p class="price">169元</p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian4/main4_1right.webp" alt=""></div>
+											<h3 class="title">仿米手环4</h3>
+											<p class="desc">大屏彩显，20天超长续航</p>
+											<p class="price">169元</p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian4/main4_1right.webp" alt=""></div>
+											<h3 class="title">仿米手环4</h3>
+											<p class="desc">大屏彩显，20天超长续航</p>
+											<p class="price">169元</p>
+										</a>
+									</li>
+									<div>
+										<li class="brick-item brick-item-m2 brick-item-m">
+											<a href="javascript:;">
+												<div class="figure"><img src="static/img/section/mian4/main4_x1right.webp"></div>
+												<h3 class="title">仿米小爱触屏音箱</h3>
+												<p class="price">199元起</p>
+											</a>
+										</li>
+										<li class="brick-item brick-item-m2 brick-item-m">
+											<a href="javascript:;">
+												<i></i>
+												<div class="more">
+													浏览更多
+													<small>热门</small>
+												</div>
+											</a>
+										</li>
+									</div>
+								</ul>
+							</div>
+							<div class="right">
+								<ul class="myclear">
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian4/main4_2right.webp" alt=""></div>
+											<h3 class="title">米家智能门锁 标准锁体 碳素黑</h3>
+											<p class="desc">大屏彩显，20天超长续航</p>
+											<p class="price">1299元</p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian4/main4_2right.webp" alt=""></div>
+											<h3 class="title">米家智能门锁 标准锁体 碳素黑</h3>
+											<p class="desc">大屏彩显，20天超长续航</p>
+											<p class="price">1299元</p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian4/main4_2right.webp" alt=""></div>
+											<h3 class="title">米家智能门锁 标准锁体 碳素黑</h3>
+											<p class="desc">大屏彩显，20天超长续航</p>
+											<p class="price">1299元</p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian4/main4_2right.webp" alt=""></div>
+											<h3 class="title">米家智能门锁 标准锁体 碳素黑</h3>
+											<p class="desc">大屏彩显，20天超长续航</p>
+											<p class="price">1299元</p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian4/main4_2right.webp" alt=""></div>
+											<h3 class="title">米家智能门锁 标准锁体 碳素黑</h3>
+											<p class="desc">大屏彩显，20天超长续航</p>
+											<p class="price">1299元</p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian4/main4_2right.webp" alt=""></div>
+											<h3 class="title">米家智能门锁 标准锁体 碳素黑</h3>
+											<p class="desc">大屏彩显，20天超长续航</p>
+											<p class="price">1299元</p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian4/main4_2right.webp" alt=""></div>
+											<h3 class="title">米家智能门锁 标准锁体 碳素黑</h3>
+											<p class="desc">大屏彩显，20天超长续航</p>
+											<p class="price">1299元</p>
+										</a>
+									</li>
+									<div>
+										<li class="brick-item brick-item-m2 brick-item-m">
+											<a href="javascript:;">
+												<div class="figure"><img src="static/img/section/mian4/main4_x2right.jpg"></div>
+												<h3 class="title">仿米米家智能摄像机云台版</h3>
+												<p class="price">199元起</p>
+											</a>
+										</li>
+										<li class="brick-item brick-item-m2 brick-item-m">
+											<a href="javascript:;">
+												<i></i>
+												<div class="more">
+													浏览更多
+													<small>热门</small>
+												</div>
+											</a>
+										</li>
+									</div>
+								</ul>
+							</div>
+							<div class="right">
+								<ul class="myclear">
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian4/main4_3right.webp" alt=""></div>
+											<h3 class="title">米家充气宝</h3>
+											<p class="desc">便携电动打气筒</p>
+											<p class="price">199元</p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian4/main4_3right.webp" alt=""></div>
+											<h3 class="title">米家充气宝</h3>
+											<p class="desc">便携电动打气筒</p>
+											<p class="price">199元</p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian4/main4_3right.webp" alt=""></div>
+											<h3 class="title">米家充气宝</h3>
+											<p class="desc">便携电动打气筒</p>
+											<p class="price">199元</p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian4/main4_3right.webp" alt=""></div>
+											<h3 class="title">米家充气宝</h3>
+											<p class="desc">便携电动打气筒</p>
+											<p class="price">199元</p>
+										</a>
+									</li>
+									<div>
+										<li class="brick-item brick-item-m2 brick-item-m">
+											<a href="javascript:;">
+												<i></i>
+												<div class="more">
+													浏览更多
+													<small>热门</small>
+												</div>
+											</a>
+										</li>
+									</div>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="home-banner-box"><a href="javascript:;"><img src="static/img/section/mian4/test.webp" alt=""></a></div>
+					<!-- 搭配 -->
+					<div class="main main-mach">
+						<div class="box-hd">
+							<h2>搭配</h2>
+							<div class="more5">
+								<ul id="J_mach" class="tab-list">
+									<li class="tab-active">热门</li>
+									<li>耳机音箱</li>
+								</ul>
+							</div>
+						</div>
+						<div class="box-content myclear">
+							<div class="left">
+								<ul>
+									<li class="brick-item"><a href="javascript:;"><img src="static/img/section/mian5/main5_1left.webp" alt=""></a></li>
+									<li class="brick-item"><a href="javascript:;"><img src="static/img/section/mian5/main5_2left.webp" alt=""></a></li>
+								</ul>
+							</div>
+							<div class="right">
+								<ul class="myclear">
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian5/main5_1right.webp" alt=""></div>
+											<h3 class="title">仿米真无线蓝牙耳机 Air 2</h3>
+											<p class="desc">智能真无线，轻松舒适戴</p>
+											<p class="price">368元<del>399元</del></p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian5/main5_1right.webp" alt=""></div>
+											<h3 class="title">仿米真无线蓝牙耳机 Air 2</h3>
+											<p class="desc">智能真无线，轻松舒适戴</p>
+											<p class="price">368元<del>399元</del></p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian5/main5_1right.webp" alt=""></div>
+											<h3 class="title">仿米真无线蓝牙耳机 Air 2</h3>
+											<p class="desc">智能真无线，轻松舒适戴</p>
+											<p class="price">368元<del>399元</del></p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian5/main5_1right.webp" alt=""></div>
+											<h3 class="title">仿米真无线蓝牙耳机 Air 2</h3>
+											<p class="desc">智能真无线，轻松舒适戴</p>
+											<p class="price">368元<del>399元</del></p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian5/main5_1right.webp" alt=""></div>
+											<h3 class="title">仿米真无线蓝牙耳机 Air 2</h3>
+											<p class="desc">智能真无线，轻松舒适戴</p>
+											<p class="price">368元<del>399元</del></p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian5/main5_1right.webp" alt=""></div>
+											<h3 class="title">仿米真无线蓝牙耳机 Air 2</h3>
+											<p class="desc">智能真无线，轻松舒适戴</p>
+											<p class="price">368元<del>399元</del></p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian5/main5_1right.webp" alt=""></div>
+											<h3 class="title">仿米真无线蓝牙耳机 Air 2</h3>
+											<p class="desc">智能真无线，轻松舒适戴</p>
+											<p class="price">368元<del>399元</del></p>
+										</a>
+									</li>
+									<div>
+										<li class="brick-item brick-item-m2 brick-item-m">
+											<a href="javascript:;">
+												<div class="figure"><img src="static/img/section/mian5/main5_x1right.webp"></div>
+												<h3 class="title">仿米小爱触屏音箱</h3>
+												<p class="price">199元起</p>
+											</a>
+										</li>
+										<li class="brick-item brick-item-m2 brick-item-m">
+											<a href="javascript:;">
+												<i></i>
+												<div class="more">
+													浏览更多
+													<small>热门</small>
+												</div>
+											</a>
+										</li>
+									</div>
+								</ul>
+							</div>
+							<div class="right">
+								<ul class="myclear">
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian5/main5_2right.webp" alt=""></div>
+											<h3 class="title">仿米降噪项圈蓝牙耳机</h3>
+											<p class="desc">无线降噪，静无止境</p>
+											<p class="price">469元<del>499元</del></p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian5/main5_2right.webp" alt=""></div>
+											<h3 class="title">仿米降噪项圈蓝牙耳机</h3>
+											<p class="desc">无线降噪，静无止境</p>
+											<p class="price">469元<del>499元</del></p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian5/main5_2right.webp" alt=""></div>
+											<h3 class="title">仿米降噪项圈蓝牙耳机</h3>
+											<p class="desc">无线降噪，静无止境</p>
+											<p class="price">469元<del>499元</del></p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian5/main5_2right.webp" alt=""></div>
+											<h3 class="title">仿米降噪项圈蓝牙耳机</h3>
+											<p class="desc">无线降噪，静无止境</p>
+											<p class="price">469元<del>499元</del></p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian5/main5_2right.webp" alt=""></div>
+											<h3 class="title">仿米降噪项圈蓝牙耳机</h3>
+											<p class="desc">无线降噪，静无止境</p>
+											<p class="price">469元<del>499元</del></p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian5/main5_2right.webp" alt=""></div>
+											<h3 class="title">仿米降噪项圈蓝牙耳机</h3>
+											<p class="desc">无线降噪，静无止境</p>
+											<p class="price">469元<del>499元</del></p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian5/main5_2right.webp" alt=""></div>
+											<h3 class="title">仿米降噪项圈蓝牙耳机</h3>
+											<p class="desc">无线降噪，静无止境</p>
+											<p class="price">469元<del>499元</del></p>
+										</a>
+									</li>
+									<div>
+										<li class="brick-item brick-item-m2 brick-item-m">
+											<a href="javascript:;">
+												<div class="figure"><img src="static/img/section/mian5/main5_x2right.jpg"></div>
+												<h3 class="title">仿米双单元半入耳式耳机</h3>
+												<p class="price">59元</p>
+											</a>
+										</li>
+										<li class="brick-item brick-item-m2 brick-item-m">
+											<a href="javascript:;">
+												<i></i>
+												<div class="more">
+													浏览更多
+													<small>热门</small>
+												</div>
+											</a>
+										</li>
+									</div>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="home-banner-box"><a href="javascript:;"><img src="static/img/section/mian5/test.webp" alt=""></a></div>
+					<!-- 配件 -->
+					<div class="main main-accessories">
+						<div class="box-hd">
+							<h2>配件</h2>
+							<div class="more5">
+								<ul id="J_accessories" class="tab-list">
+									<li class="tab-active">热门</li>
+									<li>保护套</li>
+									<li>充电器</li>
+								</ul>
+							</div>
+						</div>
+						<div class="box-content myclear">
+							<div class="left">
+								<ul>
+									<li class="brick-item"><a href="javascript:;"><img src="static/img/section/mian6/main6_1left.webp" alt=""></a></li>
+									<li class="brick-item"><a href="javascript:;"><img src="static/img/section/mian6/main6_2left.webp" alt=""></a></li>
+								</ul>
+							</div>
+							<div class="right">
+								<ul class="myclear">
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian6/main6_1right.webp" alt=""></div>
+											<h3 class="title">高速无线充套装</h3>
+											<p class="desc">快速无线闪充，Qi充电标准</p>
+											<p class="price">149元</p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian6/main6_1right.webp" alt=""></div>
+											<h3 class="title">高速无线充套装</h3>
+											<p class="desc">快速无线闪充，Qi充电标准</p>
+											<p class="price">149元</p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian6/main6_1right.webp" alt=""></div>
+											<h3 class="title">高速无线充套装</h3>
+											<p class="desc">快速无线闪充，Qi充电标准</p>
+											<p class="price">149元</p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian6/main6_1right.webp" alt=""></div>
+											<h3 class="title">高速无线充套装</h3>
+											<p class="desc">快速无线闪充，Qi充电标准</p>
+											<p class="price">149元</p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian6/main6_1right.webp" alt=""></div>
+											<h3 class="title">高速无线充套装</h3>
+											<p class="desc">快速无线闪充，Qi充电标准</p>
+											<p class="price">149元</p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian6/main6_1right.webp" alt=""></div>
+											<h3 class="title">高速无线充套装</h3>
+											<p class="desc">快速无线闪充，Qi充电标准</p>
+											<p class="price">149元</p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian6/main6_1right.webp" alt=""></div>
+											<h3 class="title">高速无线充套装</h3>
+											<p class="desc">快速无线闪充，Qi充电标准</p>
+											<p class="price">149元</p>
+										</a>
+									</li>
+									<div>
+										<li class="brick-item brick-item-m2 brick-item-m">
+											<a href="javascript:;">
+												<div class="figure"><img src="static/img/section/mian6/main6_x1right.webp"></div>
+												<h3 class="title">仿米CC9e 高透果冻保护壳</h3>
+												<p class="price">49元</p>
+											</a>
+										</li>
+										<li class="brick-item brick-item-m2 brick-item-m">
+											<a href="javascript:;">
+												<i></i>
+												<div class="more">
+													浏览更多
+													<small>热门</small>
+												</div>
+											</a>
+										</li>
+									</div>
+								</ul>
+							</div>
+							<div class="right">
+								<ul class="myclear">
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian6/main6_2right.webp" alt=""></div>
+											<h3 class="title">仿米CC9&仿米CC9美图定制版 标准高透贴膜</h3>
+											<p class="desc">高清透亮，耐磨性强</p>
+											<p class="price">19元</p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian6/main6_2right.webp" alt=""></div>
+											<h3 class="title">仿米CC9&仿米CC9美图定制版 标准高透贴膜</h3>
+											<p class="desc">高清透亮，耐磨性强</p>
+											<p class="price">19元</p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian6/main6_2right.webp" alt=""></div>
+											<h3 class="title">仿米CC9&仿米CC9美图定制版 标准高透贴膜</h3>
+											<p class="desc">高清透亮，耐磨性强</p>
+											<p class="price">19元</p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian6/main6_2right.webp" alt=""></div>
+											<h3 class="title">仿米CC9&仿米CC9美图定制版 标准高透贴膜</h3>
+											<p class="desc">高清透亮，耐磨性强</p>
+											<p class="price">19元</p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian6/main6_2right.webp" alt=""></div>
+											<h3 class="title">仿米CC9&仿米CC9美图定制版 标准高透贴膜</h3>
+											<p class="desc">高清透亮，耐磨性强</p>
+											<p class="price">19元</p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian6/main6_2right.webp" alt=""></div>
+											<h3 class="title">仿米CC9&仿米CC9美图定制版 标准高透贴膜</h3>
+											<p class="desc">高清透亮，耐磨性强</p>
+											<p class="price">19元</p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian6/main6_2right.webp" alt=""></div>
+											<h3 class="title">仿米CC9&仿米CC9美图定制版 标准高透贴膜</h3>
+											<p class="desc">高清透亮，耐磨性强</p>
+											<p class="price">19元</p>
+										</a>
+									</li>
+									<div>
+										<li class="brick-item brick-item-m2 brick-item-m">
+											<a href="javascript:;">
+												<i></i>
+												<div class="more">
+													浏览更多
+													<small>热门</small>
+												</div>
+											</a>
+										</li>
+									</div>
+								</ul>
+							</div>
+							<div class="right">
+								<ul class="myclear">
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian6/main6_3right.webp" alt=""></div>
+											<h3 class="title">仿米USB充电器30W快充版（1A1C）</h3>
+											<p class="desc">多一种接口，多一种选择</p>
+											<p class="price">59元</p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian6/main6_3right.webp" alt=""></div>
+											<h3 class="title">仿米USB充电器30W快充版（1A1C）</h3>
+											<p class="desc">多一种接口，多一种选择</p>
+											<p class="price">59元</p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian6/main6_3right.webp" alt=""></div>
+											<h3 class="title">仿米USB充电器30W快充版（1A1C）</h3>
+											<p class="desc">多一种接口，多一种选择</p>
+											<p class="price">59元</p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian6/main6_3right.webp" alt=""></div>
+											<h3 class="title">仿米USB充电器30W快充版（1A1C）</h3>
+											<p class="desc">多一种接口，多一种选择</p>
+											<p class="price">59元</p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian6/main6_3right.webp" alt=""></div>
+											<h3 class="title">仿米USB充电器30W快充版（1A1C）</h3>
+											<p class="desc">多一种接口，多一种选择</p>
+											<p class="price">59元</p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian6/main6_3right.webp" alt=""></div>
+											<h3 class="title">仿米USB充电器30W快充版（1A1C）</h3>
+											<p class="desc">多一种接口，多一种选择</p>
+											<p class="price">59元</p>
+										</a>
+									</li>
+									<div>
+										<li class="brick-item brick-item-m2 brick-item-m">
+											<a href="javascript:;">
+												<i></i>
+												<div class="more">
+													浏览更多
+													<small>热门</small>
+												</div>
+											</a>
+										</li>
+									</div>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="home-banner-box"><a href="javascript:;"><img src="static/img/section/mian6/test.webp" alt=""></a></div>
+					<!-- 周边 -->
+					<div class="main main-rim">
+						<div class="box-hd">
+							<h2>周边</h2>
+							<div class="more5">
+								<ul id="J_rim" class="tab-list">
+									<li class="tab-active">热门</li>
+									<li>出行</li>
+								</ul>
+							</div>
+						</div>
+						<div class="box-content myclear">
+							<div class="left">
+								<ul>
+									<li class="brick-item"><a href="javascript:;"><img src="static/img/section/mian7/main7_1left.webp" alt=""></a></li>
+									<li class="brick-item"><a href="javascript:;"><img src="static/img/section/mian7/main7_2left.webp" alt=""></a></li>
+								</ul>
+							</div>
+							<div class="right">
+								<ul class="myclear">
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian7/main7_1right.webp" alt=""></div>
+											<h3 class="title">米家飞行员太阳镜 Pro</h3>
+											<p class="desc">尼龙偏光，轻巧佩戴</p>
+											<p class="price">179元</p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian7/main7_1right.webp" alt=""></div>
+											<h3 class="title">米家飞行员太阳镜 Pro</h3>
+											<p class="desc">尼龙偏光，轻巧佩戴</p>
+											<p class="price">179元</p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian7/main7_1right.webp" alt=""></div>
+											<h3 class="title">米家飞行员太阳镜 Pro</h3>
+											<p class="desc">尼龙偏光，轻巧佩戴</p>
+											<p class="price">179元</p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian7/main7_1right.webp" alt=""></div>
+											<h3 class="title">米家飞行员太阳镜 Pro</h3>
+											<p class="desc">尼龙偏光，轻巧佩戴</p>
+											<p class="price">179元</p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian7/main7_1right.webp" alt=""></div>
+											<h3 class="title">米家飞行员太阳镜 Pro</h3>
+											<p class="desc">尼龙偏光，轻巧佩戴</p>
+											<p class="price">179元</p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian7/main7_1right.webp" alt=""></div>
+											<h3 class="title">米家飞行员太阳镜 Pro</h3>
+											<p class="desc">尼龙偏光，轻巧佩戴</p>
+											<p class="price">179元</p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian7/main7_1right.webp" alt=""></div>
+											<h3 class="title">米家飞行员太阳镜 Pro</h3>
+											<p class="desc">尼龙偏光，轻巧佩戴</p>
+											<p class="price">179元</p>
+										</a>
+									</li>
+									<div>
+										<li class="brick-item brick-item-m2 brick-item-m">
+											<a href="javascript:;">
+												<div class="figure"><img src="static/img/section/mian7/main7_x1right.jpg"></div>
+												<h3 class="title">8H 乳胶弹簧静音床垫 M3</h3>
+												<p class="price">1399元起</p>
+											</a>
+										</li>
+										<li class="brick-item brick-item-m2 brick-item-m">
+											<a href="javascript:;">
+												<i></i>
+												<div class="more">
+													浏览更多
+													<small>热门</small>
+												</div>
+											</a>
+										</li>
+									</div>
+								</ul>
+							</div>
+							<div class="right">
+								<ul class="myclear">
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian7/main7_2right.webp" alt=""></div>
+											<h3 class="title">90分框体旅行箱</h3>
+											<p class="desc">专利轻量合金中框，轻盈坚固 </p>
+											<p class="price">399元<del>599元</del></p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian7/main7_2right.webp" alt=""></div>
+											<h3 class="title">90分框体旅行箱</h3>
+											<p class="desc">专利轻量合金中框，轻盈坚固 </p>
+											<p class="price">399元<del>599元</del></p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian7/main7_2right.webp" alt=""></div>
+											<h3 class="title">90分框体旅行箱</h3>
+											<p class="desc">专利轻量合金中框，轻盈坚固 </p>
+											<p class="price">399元<del>599元</del></p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian7/main7_2right.webp" alt=""></div>
+											<h3 class="title">90分框体旅行箱</h3>
+											<p class="desc">专利轻量合金中框，轻盈坚固 </p>
+											<p class="price">399元<del>599元</del></p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian7/main7_2right.webp" alt=""></div>
+											<h3 class="title">90分框体旅行箱</h3>
+											<p class="desc">专利轻量合金中框，轻盈坚固 </p>
+											<p class="price">399元<del>599元</del></p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian7/main7_2right.webp" alt=""></div>
+											<h3 class="title">90分框体旅行箱</h3>
+											<p class="desc">专利轻量合金中框，轻盈坚固 </p>
+											<p class="price">399元<del>599元</del></p>
+										</a>
+									</li>
+									<li class="brick-item brick-item-m">
+										<a href="javascript:;">
+											<div class="figure-img"><img src="static/img/section/mian7/main7_2right.webp" alt=""></div>
+											<h3 class="title">90分框体旅行箱</h3>
+											<p class="desc">专利轻量合金中框，轻盈坚固 </p>
+											<p class="price">399元<del>599元</del></p>
+										</a>
+									</li>
+									<div>
+										<li class="brick-item brick-item-m2 brick-item-m">
+											<a href="javascript:;">
+												<i></i>
+												<div class="more">
+													浏览更多
+													<small>热门</small>
+												</div>
+											</a>
+										</li>
+									</div>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="home-banner-box"><a href="javascript:;"><img src="static/img/section/mian7/test.webp" alt=""></a></div>
+					<!-- 视频 -->
+					<div class="main main-video">
+						<div class="box-hd">
+							<h2>视频</h2>
+							<div class="more2">
+								<a class="more-link" href="javascript:;">查看全部<i></i></a>
+							</div>
+						</div>
+						<div class="box-content ">
+							<ul class="video-list">
+								<li class="video-item brick-item">
+									<a>
+										<div class="figure-img">
+											<img src="static/img/section/mian8/main8_1.webp">
+											<span class="play"></span>
+										</div>
+										<h3 class="title">仿米MIX Alpha 开箱视频</h3>
+										<p class="desc"></p>
+									</a>
+								</li>
+								<li class="video-item brick-item">
+									<a>
+										<div class="figure-img">
+											<img src="static/img/section/mian8/main8_2.webp">
+											<span class="play"></span>
+										</div>
+										<h3 class="title">仿米5G新品手机发布会</h3>
+										<p class="desc"></p>
+									</a>
+								</li>
+								<li class="video-item brick-item">
+									<a>
+										<div class="figure-img">
+											<img src="static/img/section/mian8/main8_3.webp">
+											<span class="play"></span>
+										</div>
+										<h3 class="title">Redmi Note 8 系列发布会</h3>
+										<p class="desc"></p>
+									</a>
+								</li>
+								<li class="video-item brick-item">
+									<a>
+										<div class="figure-img">
+											<img src="static/img/section/mian8/main8_4.webp">
+											<span class="play"></span>
+										</div>
+										<h3 class="title">仿米电视5 创新背后的故事</h3>
+										<p class="desc"></p>
+									</a>
+								</li>
+							</ul>
+							<div id="video0" class="mi-popup-mask">
+								<div class="video">
+									<div class="mi-dialog__header">
+										<span class="mi-dialog__title">
+											仿米MIX Alpha 开箱视频
+										</span>
+										<a class="mi-dialog__headerbtn"></a>
+									</div>
+									<video controls id="miPlayerVideo0" poster="static/img/section/mian8/main8_1.webp" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7f49c1ccd75f76ec86b52c9ae4c4a082.mp4"
+										   preload="none"></video>
+									<div class="mi-video-play-btn"></div>
+								</div>
+							</div>
+							<div id="video1" class="mi-popup-mask">
+								<div class="video">
+									<div class="mi-dialog__header">
+										<span class="mi-dialog__title">
+											仿米5G新品手机发布会
+										</span>
+										<a class="mi-dialog__headerbtn"></a>
+									</div>
+									<video controls id="miPlayerVideo1" poster="static/img/section/mian8/main8_2.webp" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1443581f88b733750c7763b2b3d67c52.mp4"
+										   preload="none"></video>
+									<div class="mi-video-play-btn"></div>
+								</div>
+							</div>
+							<div id="video2" class="mi-popup-mask">
+								<div class="video">
+									<div class="mi-dialog__header">
+										<span class="mi-dialog__title">
+											Redmi Note 8 系列发布会
+										</span>
+										<a class="mi-dialog__headerbtn"></a>
+									</div>
+									<video controls id="miPlayerVideo2" poster="static/img/section/mian8/main8_3.webp" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/df3dc1da003b7db992e902f653326476.mp4"
+										   preload="none"></video>
+									<div class="mi-video-play-btn"></div>
+								</div>
+							</div>
+							<div id="video3" class="mi-popup-mask">
+								<div class="video">
+									<div class="mi-dialog__header">
+										<span class="mi-dialog__title">
+											仿米电视5 创新背后的故事
+										</span>
+										<a class="mi-dialog__headerbtn"></a>
+									</div>
+									<video controls id="miPlayerVideo3" poster="static/img/section/mian8/main8_4.webp" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/efea1979661bac0d1704d761e5e89ded.mp4"
+										   preload="none"></video>
+									<div class="mi-video-play-btn"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 主体内容的分页部分end -->
+		</section>
+		<!-- 页脚 -->
+		<footer>
+			<div class="site-footer">
+				<div class="container">
+					<div class="footer-service">
+						<ul class="list-service myclear">
+							<li><a href="javascript:;"><em class="em1"></em>预约维修服务</a></li>
+							<li><a href="javascript:;"><em class="em2"></em>7天无理由退货</a></li>
+							<li><a href="javascript:;"><em class="em3"></em>15天免费换货</a></li>
+							<li><a href="javascript:;"><em class="em4"></em>满99元包邮</a></li>
+							<li><a href="javascript:;"><em class="em5"></em>520余家售后网点</a></li>
+						</ul>
+					</div>
+					<div class="footer-links myclear">
+						<dl class="col-links">
+							<dt>帮助中心</dt>
+							<dd><a href="javascript:;">账户管理</a></dd>
+							<dd><a href="javascript:;">购物指南</a></dd>
+							<dd><a href="javascript:;">订单操作</a></dd>
+						</dl>
+						<dl class="col-links ">
+							<dt>服务支持</dt>
+							<dd><a href="javascript:;">售后政策</a></dd>
+							<dd><a href="javascript:;">自助服务</a></dd>
+							<dd><a href="javascript:;">相关下载</a></dd>
+						</dl>
+						<dl class="col-links ">
+							<dt>线下门店</dt>
+							<dd><a href="javascript:;">仿米之家</a></dd>
+							<dd><a href="javascript:;">服务网点</a></dd>
+							<dd><a href="javascript:;">授权体验店</a></dd>
+						</dl>
+						<dl class="col-links ">
+							<dt>关于仿米</dt>
+							<dd><a href="javascript:;">了解仿米</a></dd>
+							<dd><a href="javascript:;">加入仿米</a></dd>
+							<dd><a href="javascript:;">投资者关系</a></dd>
+						</dl>
+						<dl class="col-links ">
+							<dt>关注我们</dt>
+							<dd><a href="javascript:;">新浪微博</a></dd>
+							<dd><a href="javascript:;">官方微信</a></dd>
+							<dd><a href="javascript:;">联系我们</a></dd>
+						</dl>
+						<dl class="col-links ">
+							<dt>特色服务</dt>
+							<dd><a href="javascript:;">F 码通道</a></dd>
+							<dd><a href="javascript:;">礼物码</a></dd>
+							<dd><a href="javascript:;">防伪查询</a></dd>
+						</dl>
+						<div class="col-contact">
+							<p class="phone">400-100-5678</p>
+							<p>周一至周日 8:00-18:00<br>（仅收市话费）</p>
+							<a class="btn btn-line-primary btn-small">
+								<em></em>
+								人工客服
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="site-info">
+				<div class="container">
+					<div class="logo ir">仿米官网</div>
+					<div class="info-text">
+						<p class="sites">
+							<a rel="nofollow" href="index.html" target="_blank">仿米商城</a>
+							<span class="sep">|</span>
+							<a href="javascript:;">MIUI</a>
+							<span class="sep">|</span>
+							<a href="javascript:;">米家</a>
+							<span class="sep">|</span>
+							<a href="http://www.miliao.com/">米聊</a>
+							<span class="sep">|</span>
+							<a href="//www.duokan.com/">多看</a>
+							<span class="sep">|</span>
+							<a rel="nofollow" href="javascript:;">游戏</a>
+							<span class="sep">|</span>
+							<a rel="nofollow" href="javascript:;">政企服务</a>
+							<span class="sep">|</span>
+							<a rel="nofollow" href="javascript:;">仿米天猫店</a>
+							<span class="sep">|</span>
+							<a rel="nofollow" href="javascript:;">仿米集团隐私政策</a>
+							<span class="sep">|</span>
+							<a rel="nofollow" href="javascript:;">仿米公司儿童信息保护规则</a>
+							<span class="sep">|</span>
+							<a rel="nofollow" href="javascript:;">仿米商城隐私政策</a>
+							<span class="sep">|</span>
+							<a rel="nofollow" href="javascript:;">仿米商城用户协议</a>
+							<span class="sep">|</span>
+							<a rel="nofollow" href="javascript:;">问题反馈</a>
+							<span class="sep">|</span>
+							<a rel="nofollow" href="javascript:;">廉正举报</a>
+							<span class="sep">|</span>
+							<a rel="nofollow" href="javascript:;">诚信合规</a>
+							<span class="sep">|</span>
+							<a rel="nofollow" href="javascript:;">Select Location</a>
+						</p>
+						<p>
+							©
+							<a href="javascript:;">mi.com</a> 京ICP证110507号
+							<a href="http://beian.miit.gov.cn/">京ICP备10046444号</a>
+							<a rel="nofollow" href="javascript:;">京公网安备11010802020134号</a>
+							<a href="//www.mi.com/culture-license/">京网文[2017]1530-131号</a><br>
+							<a href="//www.mi.com/medical/record/">（京）网械平台备字（2018）第00005号</a>
+							<a href="//www.mi.com/medical/qualification/">互联网药品信息服务资格证 (京)-非经营性-2014-0090</a>
+							<a href="//www.mi.com/business-license/">营业执照</a>
+							<a href="//www.mi.com/medical/list/">医疗器械质量公告</a> <br>
+							<a href="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/af5b8ef38e7d57c5ee7fa4289ccf4df8.png">增值电信业务许可证</a>&nbsp;网络食品经营备案（京）【2018】WLSPJYBAHF-12&nbsp;
+							<a href="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/fe7383e11127caea371f17156f429a1e.png">食品经营许可证</a> <br>
+							违法和不良信息举报电话：185-0130-1238&nbsp;<a href="//www.mi.com/static/intellectual/index.html">知识产权侵权投诉</a>&nbsp;本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
+						</p>
+					</div>
+					<div class="info-links">
+						<a href="javascript:;"><img src="static/img/footer/xm1.png" alt=""></a>
+						<a href="javascript:;"><img src="static/img/footer/xm2.png" alt=""></a>
+						<a href="javascript:;"><img src="static/img/footer/xm3.png" alt=""></a>
+						<a href="javascript:;"><img src="static/img/footer/xm4.png" alt=""></a>
+						<a href="javascript:;"><img src="static/img/footer/xm5.png" alt=""></a>
+					</div>
+				</div>
+				<div class="slogan ir">探索黑科技，仿米为发烧而生</div>
+			</div>
+			<!-- 固定 -->
+			<div class="div_home">
+				<a href="javascript:;" class="home1"><span>米码</span></a>
+				<a href="javascript:;" class="home2"><span>个人中心</span></a>
+				<a href="javascript:;" class="home3"><span>售后服务</span></a>
+				<a href="javascript:;" class="home4"><span>个人服务</span></a>
+				<a href="javascript:;" class="home5"><span>购物车（0）</span></a>
+				<a href="javascript:;header" class="img_yincang"><span>回到顶部</span></a>
+			</div>
+		</footer>
+	</body>
+</html>

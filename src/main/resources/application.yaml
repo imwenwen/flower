@@ -2,7 +2,7 @@ server:
   port: 8888
 spring:
   application:
-    name: assistant-server
+    name: flower-server
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     url: jdbc:mysql://127.0.0.1:3306/flower?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
