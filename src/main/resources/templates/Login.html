@@ -7,7 +7,7 @@
     <meta name="author" content="登录">
     <base th:href="@{/}">
     <!-- 上面定义了base路径标签,那么这里的css路径就可以直接写css路径,Springboot中,static文件夹默认就是静态资源文件夹,所以这里static/css/mycss.css可以不写static/了 -->
-    <link href="static/css/login.css" rel="stylesheet">
+    <link href="../static/css/login.css" rel="stylesheet">
 </head>
 <body>
 <div class="wrap">
@@ -25,6 +25,8 @@
                 </div>
                 <div class="loginbox">
                     <!-- 帐号登录 -->
+                    <form action="#" th:action="@{/Login}" method="post">
+
                     <div class="btn login_area">
                         <input class="item_account" type="text" name="user" id="phone" placeholder="手机号码">
                         <input class="item_account" type="password" placeholder="密码" id="pwd" name="password">
@@ -58,6 +60,7 @@
                             </div>
                         </div>
                     </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -76,7 +79,7 @@
         <div class="footer-intro">
             小米公司版权所有-京ICP备10046444-
             <a class="beian-record-link" target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020134">
-                <span><img src="static/img/login/ghs.png"></span>
+                <span><img src="../static/img/login/ghs.png"></span>
                 京公网安备11010802020134号
             </a>
             -京ICP证110507号
@@ -88,35 +91,6 @@
         // 初始化方法
         start() {
             this.loginArea();
-        },
-
-        // 登录验证
-        loginArea() {
-            // 获取保存在浏览器中的用户名和密码
-
-            // 获取节点
-            let phone = document.getElementById('phone');
-            let pwd = document.getElementById('pwd');
-            let errer = document.getElementById('errer');
-            let loginBtn = document.getElementById('login-button');
-
-            // 登录
-            loginBtn.onclick = function() {
-                $.ajax({
-                    url: '/Login',
-                    type: 'POST',
-                    async: true,
-                    data: {
-                        phone,
-                        pwd
-                    },
-                    success: function (data) {
-                        console.log(data);
-                        window.location.href = 'index.html';
-                        sessionStorage.setItem("flage", 'true');
-                    }
-                })
-            }
         },
     }
     xiaomi.start();
